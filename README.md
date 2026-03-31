@@ -1,4 +1,4 @@
-# DSA210 Project – Coffee Health Analysis
+# DSA210 Project – Exploring the Impact of Coffee Consumption on Sleep and Lifestyle Factors
 
 Author: Sera Sinem Baygan  
 Course: DSA210 – Introduction to Data Science  
