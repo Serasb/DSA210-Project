@@ -11,10 +11,10 @@ This project explores the relationship between coffee consumption, sleep quality
 
 This project uses a self-collected dataset gathered through a structured survey.
 
-👥 Participants: 100+ individuals
-🛠️ Method: Google Forms survey
-📅 Collection Period: [buraya tarih yazabilirsin, opsiyonel]
-🌍 Target Group: University students / general population (hangisiyse onu yaz)
+- 👥 Participants: 100+ individuals
+- 🛠️ Method: Google Forms survey
+- 📅 Collection Period: [buraya tarih yazabilirsin, opsiyonel]
+- 🌍 Target Group: University students / general population (hangisiyse onu yaz)
 
 The dataset includes variables such as:
 
