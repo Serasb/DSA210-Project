@@ -27,3 +27,12 @@ This original dataset allows for a more customized and relevant analysis, rather
 
 🔗 Survey Link:
 https://docs.google.com/forms/d/e/1FAIpQLSc1MBsBbvjHbgN6CS08nhs_ZWxy2Chg-ULy-O1x_lVijnyjow/viewform?usp=publish-editor
+
+### 📈 Dataset Improvement
+
+The original proposal aimed to collect data from 20–30 participants. However, the final dataset includes over 100 responses, significantly enhancing the quality of the analysis.
+
+This improvement allows for:
+- More reliable statistical insights  
+- Better generalization of findings  
+- Stronger exploratory data analysis (EDA)  
