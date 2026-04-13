@@ -13,7 +13,7 @@ This project uses a self-collected dataset gathered through a structured survey.
 
 👥 Participants: 100+ individuals  
 🛠️ Method: Google Forms survey  
-📅 Collection Period: 04.2026  
+📅 Collection Period: April 2026  
 🌍 Target Group: University students / general population 
 
 The dataset includes variables such as:
