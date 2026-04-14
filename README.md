@@ -38,7 +38,7 @@ This improvement allows for:
 - Better generalization of findings  
 - Stronger exploratory data analysis (EDA)
 
-##🧪 Methodology
+## 🧪 Methodology
 
 The analysis includes:
 
