@@ -35,4 +35,13 @@ The original proposal aimed to collect data from 20–30 participants. However, 
 This improvement allows for:
 - More reliable statistical insights  
 - Better generalization of findings  
-- Stronger exploratory data analysis (EDA)  
+- Stronger exploratory data analysis (EDA)
+
+## 📊 Key Findings
+
+- Coffee consumption is negatively correlated with sleep hours (r ≈ -0.24, p < 0.05)
+- No significant relationship between coffee consumption and stress (Spearman p > 0.05)
+- No significant difference in sleep hours between exercisers and non-exercisers (Mann-Whitney p > 0.05)
+- Stress and screen time show a weak positive correlation (r ≈ 0.24)
+
+These results suggest that coffee consumption has a measurable impact on sleep duration, while other lifestyle factors show weaker or non-significant relationships.
