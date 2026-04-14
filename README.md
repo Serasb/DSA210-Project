@@ -47,7 +47,7 @@ The analysis includes:
   - Pearson correlation (numerical variables)
   - Spearman correlation (ordinal variables)
 
-Hypothesis testing:
+- Hypothesis testing:
   - H1: Coffee vs Sleep Hours (Pearson)
   - H2: Coffee vs Stress (Spearman)
   - H3: Exercise vs Sleep Hours (Mann-Whitney U)
