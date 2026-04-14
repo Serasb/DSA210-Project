@@ -18,10 +18,11 @@ This project uses a self-collected dataset gathered through a structured survey.
 
 The dataset includes variables such as:
 
-- Coffee consumption habits
+- Coffee consumption (cups per day)
 - Sleep duration and quality
-- Stress levels
-- Daily lifestyle patterns
+- Stress levels (ordinal scale)
+- Screen time before sleep
+- Exercise habits
 
 This original dataset allows for a more customized and relevant analysis, rather than relying solely on publicly available data.
 
@@ -37,11 +38,33 @@ This improvement allows for:
 - Better generalization of findings  
 - Stronger exploratory data analysis (EDA)
 
-## 📊 Key Findings
+##🧪 Methodology
 
-- Coffee consumption is negatively correlated with sleep hours (r ≈ -0.24, p < 0.05)
-- No significant relationship between coffee consumption and stress (Spearman p > 0.05)
-- No significant difference in sleep hours between exercisers and non-exercisers (Mann-Whitney p > 0.05)
-- Stress and screen time show a weak positive correlation (r ≈ 0.24)
+The analysis includes:
 
-These results suggest that coffee consumption has a measurable impact on sleep duration, while other lifestyle factors show weaker or non-significant relationships.
+- Exploratory Data Analysis (EDA)  
+- Correlation analysis:  
+  - Pearson correlation (numerical variables)
+  - Spearman correlation (ordinal variables)
+
+Hypothesis testing:
+  - H1: Coffee vs Sleep Hours (Pearson)
+  - H2: Coffee vs Stress (Spearman)
+  - H3: Exercise vs Sleep Hours (Mann-Whitney U)
+  - H4: Screen Time vs Stress (Correlation analysis)
+
+Significance level: α = 0.05
+
+## 📈 Key Findings
+
+- Coffee consumption is **negatively correlated** with sleep duration  
+  *(r ≈ -0.24, p < 0.05)*  
+  → Higher coffee intake is associated with less sleep  
+
+- No statistically significant relationship was found between coffee consumption and stress  
+
+- No significant difference in sleep duration between individuals who exercise and those who do not  
+
+- Screen time and stress show a **weak positive relationship**  
+  *(r ≈ 0.24)*  
+  → Higher screen time may be associated with increased stress  
