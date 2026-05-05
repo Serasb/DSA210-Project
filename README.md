@@ -67,4 +67,31 @@ Significance level: α = 0.05
 
 - Screen time and stress show a **weak positive relationship**  
   *(r ≈ 0.24)*  
-  → Higher screen time may be associated with increased stress  
+  → Higher screen time may be associated with increased stress
+
+## 🤖 Machine Learning Approach  
+To complement the statistical analysis, machine learning models were applied to explore whether lifestyle factors could predict coffee consumption behavior.  
+Using features such as sleep duration, sleep quality, stress level, screen time before sleep, and exercise habits, supervised learning models were trained to identify patterns in coffee consumption.  
+The machine learning stage aimed to add a predictive perspective to the project by examining how well daily lifestyle habits explain coffee drinking behavior.  
+
+### Models Used  
+- Logistic Regression  
+- Random Forest Classifier  
+
+### Target Variable  
+- Coffee consumption level  
+
+### Features  
+- Sleep duration  
+- Sleep quality  
+- Stress level  
+- Screen time before sleep  
+- Exercise habits  
+
+### Evaluation Metrics  
+- Accuracy  
+- F1-score  
+- Confusion Matrix  
+
+### ML Objective  
+The goal of this stage was not only to predict coffee consumption, but also to identify which lifestyle factors were the most influential in shaping coffee habits.  
