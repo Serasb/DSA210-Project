@@ -66,16 +66,16 @@ The two statistically significant findings (H1 and H4) were formalized as superv
 **Model 1 — Predicting Sleep Hours (H1)**
 - Target: `sleep_hours`
 - Features: `coffee`, `stress`, `screen_time`, `age`
-- Models: Linear Regression, Decision Tree Regressor (max depth = 3)
+- Models: Dummy (baseline), Linear Regression, Ridge (α=1), KNN (k=5), Decision Tree (d=3)
 - Evaluation: R², RMSE, 5-fold cross-validation
 
 **Model 2 — Predicting Stress Level (H4)**
 - Target: `stress`
 - Features: `screen_time`, `coffee`, `age`
-- Models: Linear Regression, Decision Tree Regressor (max depth = 3)
+- Models: Dummy (baseline), Linear Regression, Ridge (α=1), KNN (k=5), Decision Tree (d=3)
 - Evaluation: R², RMSE, 5-fold cross-validation
 
-**Model selection rationale:** Linear Regression was chosen as the primary model due to interpretability and suitability for small datasets. Decision Tree was included as a comparison. Since neither model significantly outperformed the other, and the Decision Tree is susceptible to overfitting with only 84 training samples, Linear Regression was retained as the main model.
+**Model selection rationale:** Linear Regression was chosen as the primary model due to interpretability and suitability for small datasets. A Dummy Regressor (predicts the mean) was included as the true baseline. Since no model consistently outperformed the Dummy baseline, the weak predictive performance is attributed to insufficient feature informativeness rather than model choice — a finding that reflects the limitations of the survey design.
 
 ---
 
@@ -90,8 +90,8 @@ The two statistically significant findings (H1 and H4) were formalized as superv
 ### Machine Learning
 - The `coffee` coefficient is **negative** in Model 1 → consistent with H1.
 - The `screen_time` coefficient is **positive** in Model 2 (β = +0.369) → consistent with H4.
-- Both models return a **low or negative R²** — the model does not predict the target better than simply guessing the mean. This is expected given the small sample size and self-reported nature of the data. A statistically significant correlation does not guarantee high R²; they measure different things.
-- Decision Tree did not outperform Linear Regression, confirming that the low predictive power is a data limitation, not a model problem.
+- All models — including Ridge, KNN, and Decision Tree — fail to outperform the Dummy Regressor. This confirms that the issue is not model complexity but **feature informativeness**: the survey did not capture enough predictive signal for sleep hours or stress.
+- The survey was intentionally kept short to maximize participation, but this reduced feature depth. Key predictors such as caffeine timing, academic workload, and sleep environment were not collected.
 
 ---
 
@@ -117,7 +117,8 @@ The two statistically significant findings (H1 and H4) were formalized as superv
 ├── ml_fig2_simple_regression.png
 ├── ml_fig3_model2_diagnostics.png
 ├── ml_fig4_decision_tree_structure.png
-└── ml_fig5_model_comparison.png
+├── ml_fig5_model_comparison.png
+└── ml_fig6_model_comparison_extended.png
 ```
 
 ---
@@ -141,7 +142,8 @@ Place `DSA210 (Responses).xlsx` in the same directory as the notebooks before ru
 
 - **Small sample size** (n=106): limits generalizability and model stability
 - **Self-reported data**: subject to recall bias and social desirability effects
-- **Survey design**: all questions were mandatory, leading to forced responses (corrected in preprocessing)
+- **Survey design**: kept intentionally short to maximize participation, reducing feature depth
+- **Missing predictors**: caffeine timing, sleep environment, academic workload, and stress causes were not collected
 - **Sample bias**: participants are predominantly young university students
 - **Correlation ≠ causation**: associations found do not imply causal relationships
 
@@ -149,8 +151,8 @@ Place `DSA210 (Responses).xlsx` in the same directory as the notebooks before ru
 
 ## 🔮 Future Work
 
-- Collect more data (n > 500) for stable machine learning models with reliable cross-validation
-- Add features: caffeine timing, sleep environment, medication use, work and study hours
+- Collect more data (n > 500) for stable machine learning models
+- Add features: caffeine timing, sleep environment, medication, work and study hours
 - Use objective measurements (actigraphy, wearables) instead of self-reported data
 - Explore ensemble models (Random Forest, XGBoost) and kNN with a larger dataset
 - Apply time-series analysis if longitudinal data becomes available
