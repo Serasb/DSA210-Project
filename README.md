@@ -101,8 +101,8 @@ The two statistically significant findings (H1 and H4) were formalized as superv
 ├── EDA.ipynb                              # Milestone 1: Data cleaning, EDA, hypothesis testing
 ├── ML.ipynb                               # Milestone 2: Machine learning models and comparison
 ├── Final_Report.pdf                       # Milestone 3: Final report  
-├── DSA210 (Responses).xlsx               # Raw survey data
-├── DSA210 Project Proposal.pdf           # Initial project proposal
+├── DSA210 (Responses).xlsx                # Raw survey data
+├── DSA210 Project Proposal.pdf            # Initial project proposal
 ├── requirements.txt                       # Python dependencies
 ├── README.md                              # Project documentation
 ├── eda_fig1_distributions_numerical.png
